@@ -1,0 +1,140 @@
+/* Write your code here. */
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.app-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, #1d976c, #93f9b9);
+}
+@media all and (max-width: 576px) {
+  .app-container {
+    height: 100%;
+  }
+}
+.countImageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 93%;
+}
+.countContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  order: 1;
+}
+.heading {
+  font-family: 'Roboto';
+  font-size: 29px;
+  font-weight: 900;
+  color: #ffffff;
+  text-align: center;
+}
+.note {
+  font-family: 'Roboto';
+  font-size: 19px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: left;
+}
+.inputbox {
+  background-color: transparent;
+  height: 28px;
+  width: 190px;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 17px;
+  font-weight: 400;
+  padding: 9px;
+  outline: none;
+}
+
+.count {
+  background-color: #e4e7eb;
+  border: 1px solid #e4e7eb;
+  border-radius: 9px;
+  height: 70px;
+  width: 260px;
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: 700;
+  color: #219a6f;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.image {
+  height: 249px;
+  width: 292px;
+  order: 0;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+@media all and (min-width: 768px) {
+  .countImageContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+  }
+  .countContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    order: 0;
+  }
+  .heading {
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-weight: 900;
+    color: #ffffff;
+    margin-left: 17px;
+  }
+  .note {
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-weight: 900;
+    margin-left: 17px;
+  }
+  .inputbox {
+    height: 46px;
+    width: 400px;
+    border-radius: 9px;
+    font-size: 26px;
+    font-weight: 500;
+    padding: 13px;
+    margin-left: 17px;
+  }
+  .count {
+    border-radius: 10px;
+    height: 90px;
+    width: 290px;
+    font-size: 30px;
+    margin-left: 20px;
+  }
+  .image {
+    height: 430px;
+    width: 500px;
+    order: 1;
+  }
+}
